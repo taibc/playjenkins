@@ -18,7 +18,7 @@ pipeline {
     stage('Build image') {      
       steps{
         
-        sh "chown root:jenkins /var/run/docker.sock"
+        sh "who am I"
          
         script {
           dockerImage = docker.build registry + ":$BUILD_NUMBER"
