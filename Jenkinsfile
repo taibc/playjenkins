@@ -12,10 +12,11 @@ pipeline {
     stage('Checkout Source') {
       steps {
         git 'https://github.com/taibc/playjenkins.git'
+        sh 'who am I'
       }
     }
 
-    stage('Build image') {
+    stage('Build image') {      
       steps{
         script {
           dockerImage = docker.build registry + ":$BUILD_NUMBER"
