@@ -11,8 +11,8 @@ pipeline {
 
     stage('Checkout Source') {
       steps {
-        git 'https://github.com/taibc/playjenkins.git'
-        sh 'who am I'
+        who am I
+        git 'https://github.com/taibc/playjenkins.git'        
       }
     }
 
