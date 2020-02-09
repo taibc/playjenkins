@@ -17,7 +17,7 @@ pipeline {
     
      stage('Who am I') {
       steps {
-        who am I            
+        sh 'who am I'            
       }
     }
 
