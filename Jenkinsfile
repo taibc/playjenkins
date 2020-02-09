@@ -15,6 +15,12 @@ pipeline {
         git 'https://github.com/taibc/playjenkins.git'        
       }
     }
+    
+     stage('Who am I') {
+      steps {
+        who am I            
+      }
+    }
 
     stage('Build image') {      
       steps{
